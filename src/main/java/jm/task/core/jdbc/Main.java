@@ -8,14 +8,7 @@ import jm.task.core.jdbc.service.UserServiceImpl;
 import jm.task.core.jdbc.util.Util;
 
 public class Main {
-    private static final UserService userService = new UserServiceImpl();
-    private static final User user1 = new User("Mitroy", "Gopit", (byte) 60);
-    private static final User user2 = new User("Jija", "Top", (byte) 15);
-    private static final User user3 = new User("Stariy", "Pes", (byte) 126);
-    private static final User user4 = new User("Legkiy", "Qyqer", (byte) 76);
-
-
-    public static void main(String[] args) {
+       public static void main(String[] args) {
 //        Util.getConnection();
         UserDao userDao = new UserDaoJDBCImpl();
 //        userDao.createUsersTable();
