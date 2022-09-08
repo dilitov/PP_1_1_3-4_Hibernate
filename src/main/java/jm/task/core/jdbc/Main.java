@@ -15,21 +15,23 @@ public class Main {
     private static final User user4 = new User("Name4", "LastName4", (byte) 38);
 
     public static void main(String[] args) {
-//        userService.createUsersTable();
-//
-//        userService.saveUser(user1.getName(), user1.getLastName(), user1.getAge());
-//
-//        userService.saveUser(user2.getName(), user2.getLastName(), user2.getAge());
-//
-//        userService.saveUser(user3.getName(), user3.getLastName(), user3.getAge());
-//
-//        userService.saveUser(user4.getName(), user4.getLastName(), user4.getAge());
+        userService.createUsersTable();
 
-//        userService.getAllUsers();
+        userService.saveUser(user1.getName(), user1.getLastName(), user1.getAge());
+
+        userService.saveUser(user2.getName(), user2.getLastName(), user2.getAge());
+
+        userService.saveUser(user3.getName(), user3.getLastName(), user3.getAge());
+
+        userService.saveUser(user4.getName(), user4.getLastName(), user4.getAge());
+
+        userService.getAllUsers();
 
         userService.cleanUsersTable();
-//
+
         userService.dropUsersTable();
+
+        Util.CloseSessionFactory();
 
     }
 }

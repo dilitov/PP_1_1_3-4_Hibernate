@@ -50,6 +50,10 @@ public class Util {
         return sessionFactory;
     }
 
+    public static void CloseSessionFactory() {
+        sessionFactory.close();
+        System.out.println("SessionFactory was closed");
+    }
 
     public static Connection getConnection() {
         try {
